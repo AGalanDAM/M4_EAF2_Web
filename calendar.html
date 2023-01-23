@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f15d009c8b.js" crossorigin="anonymous"></script>
+    <link href="./estils/styles.css" rel="stylesheet">
+    <title>Abraham Lincoln High School - AGalan</title>
+</head>
+
+<body>
+    <!-- Barra de navegació -->
+    <div id="menu">
+        <div id="logo">
+            <img src="./imatges/ALHS_logo.png">
+        </div>
+        <div id="title">
+            <h1 class="navBar">Abraham Lincoln High School</h1>
+        </div>
+        <div id="sidePanel">
+            <div id="mySidepanel" class="sidepanel">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="./index.html">Inici</a>
+                <a href="./calendar.html">Calendari</a>
+                <a href="#">Clients</a>
+                <a href="#">Contact</a>
+            </div>
+
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+            <script>
+                function openNav() {
+                    document.getElementById("mySidepanel").style.width = "250px";
+                }
+                function closeNav() {
+                    document.getElementById("mySidepanel").style.width = "0";
+                }
+            </script>
+        </div>
+    </div>
+    <!--  -->
+
+    <div id="calendar">
+        <h2 align="center" style="color: orange;">
+            Gener 2023
+        </h2>
+        <br />
+      
+        <table align=center cellspacing="21" cellpadding="21">
+            <caption align="top"></caption>
+            <thead>
+                <tr>
+                    <th style="color: white; background: #902020;">
+                        Dl</th>
+                    <th style="color: white; background: #902020;">
+                        Dt</th>
+                    <th style="color: white; background: #902020;">
+                        Dc</th>
+                    <th style="color: white; background: #902020;">
+                        Dj</th>
+                    <th style="color: white; background: #902020;">
+                        Dv</th>
+                    <th style="color: white; background: #902020;">
+                        Ds</th>
+                    <th style="color: white; background: #902020;">
+                        Dg</th>
+                </tr>
+            </thead>
+      
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>1</td>
+                    <td>2</td>
+                </tr>
+                <tr></tr>
+                <tr>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td>18</td>
+                    <td>19</td>
+                    <td>20</td>
+                    <td>21</td>
+                    <td>22</td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <td>24</td>
+                    <td>25</td>
+                    <td>26</td>
+                    <td>27</td>
+                    <td>28</td>
+                    <td>29</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>31</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
