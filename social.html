@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="./estils/styles.css" rel="stylesheet">
+    <title>Social [ALHS] - AGalan</title>
+</head>
+
+<body>
+    <!-- Barra de navegació -->
+    <div id="menu">
+        <div id="logo">
+            <a href=index.html><img src="./imatges/ALHS_logo.png"></a>
+        </div>
+        <div id="title">
+            <h1 class="navBar">Abraham Lincoln High School</h1>
+        </div>
+        <div id="sidePanel">
+            <div id="mySidepanel" class="sidepanel">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="./index.html">Inici</a>
+                <a href="./calendar.html">Calendari</a>
+                <a href="./announcements.html">Anuncis</a>
+                <a href="./social.html">Social</a>
+            </div>
+
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+            <script>
+                function openNav() {
+                    document.getElementById("mySidepanel").style.width = "250px";
+                }
+                function closeNav() {
+                    document.getElementById("mySidepanel").style.width = "0";
+                }
+            </script>
+        </div>
+    </div>
+    <!--  -->
+
+    <div id="social" align="center">
+        <h1 align="center">Social</h1>
+        <article class="reds">
+            <h1>Reds Socials</h1>
+            <article class="red">
+                <a class="hyperLinkRemove" href="https://www.instagram.com/alhsbklyn/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+                <p>Instagram oficial de l'institut Abraham Lincoln High School</p>
+            </article>
+            <article class="red">
+                <a class="hyperLinkRemove" href="https://twitter.com/alhs_nyc" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                    <span>Twitter</span>
+                </a>
+                <p>Compte de Twitter de l'institut Abraham Lincoln High School</p>
+            </article>
+            <article class="red">
+                <a class="hyperLinkRemove" href="https://www.facebook.com/alhsbklyn/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                    <span>Facebook</span>
+                </a>
+                <p>Facebook de l'institut Abraham Lincoln High School</p>
+            </article>
+        </article>
+    </div>
+</body>
+
+</html>
