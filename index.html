@@ -1,13 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://kit.fontawesome.com/f15d009c8b.js" crossorigin="anonymous"></script>
+    <link href="./estils/styles.css" rel="stylesheet">
+    <title>Abraham Lincoln High School - AGalan</title>
 </head>
+
 <body>
-    <h1>Test</h1>
-    <p>Això és una prova</p>
+    <!-- Barra de navegació -->
+    <div id="menu">
+        <div id="logo">
+            <img src="./imatges/ALHS_logo.png">
+        </div>
+        <div id="title">
+            <h1 class="navBar">Abraham Lincoln High School</h1>
+        </div>
+        <div id="sidePanel">
+            <div id="mySidepanel" class="sidepanel">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="./index.html">Inici</a>
+                <a href="./calendar.html">Calendari</a>
+                <a href="./announcements.html">Anuncis</a>
+                <a href="#">Contact</a>
+            </div>
+
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+            <script>
+                function openNav() {
+                    document.getElementById("mySidepanel").style.width = "250px";
+                }
+                function closeNav() {
+                    document.getElementById("mySidepanel").style.width = "0";
+                }
+            </script>
+        </div>
+    </div>
+    <!--  -->
+
+    <!-- Header -->
+    <div id="header">
+        <header>
+            <img class="header" src="./imatges/ALHS_header1.png">
+        </header>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                let images = ["./imatges/ALHS_header1.png", "./imatges/ALHS_header2.png"];
+                let index = 0;
+                const imgElement = document.querySelector(".header");
+                function change() {
+                    imgElement.src = images[index];
+                    index > 0 ? index = 0 : index++;
+                }
+                window.onload = function () {
+                    setInterval(change, 5000);
+                };
+            })
+        </script>
+    </div>
+    <!--  -->
+    <div id="blocAnuncis">
+        <div id="blocAnuncisT" align="center">
+            <h1><a href="./announcements.html">Anuncis</a></h1>
+        </div>
+        <div id="blocAnuncisText">
+            <h2>Butlletí ALHS 19/01/2023</h2>
+            <p class="negreta">1) L'últim dia del primer trimestre és el 23 de gener</p>
+            <p>
+                L'últim dia del quart període de qualificació (període de qualificació final) és el 23 de gener. Els
+                butlletins de qualificacions es distribuiran digitalment a NYCSA l'1 de febrer. Si no teniu un
+                NYSCA,
+                sol·liciteu el vostre codi de creació de compte aquí.
+            </p>
+        </div>
+    </div>
+    <div id="calendar">
+
+    </div>
 </body>
+
 </html>
