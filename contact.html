@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="./estils/styles.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="./imatges/ALHS_icon.ico">
-    <title>Social - AGalan</title>
+    <title>Contacte - AGalan</title>
 </head>
 
 <body>
@@ -44,32 +44,28 @@
     </div>
     <!--  -->
 
-    <div id="social" align="center">
-        <h1 align="center">Social</h1>
-        <article class="reds">
-            <h1>Reds Socials</h1>
-            <article class="red">
-                <a class="hyperLinkRemove" href="https://www.instagram.com/alhsbklyn/" target="_blank">
-                    <i class="fa-brands fa-instagram"></i>
-                    <span>Instagram</span>
-                </a>
-                <p>Instagram oficial de l'institut Abraham Lincoln High School</p>
-            </article>
-            <article class="red">
-                <a class="hyperLinkRemove" href="https://twitter.com/alhs_nyc" target="_blank">
-                    <i class="fa-brands fa-twitter"></i>
-                    <span>Twitter</span>
-                </a>
-                <p>Compte de Twitter de l'institut Abraham Lincoln High School</p>
-            </article>
-            <article class="red">
-                <a class="hyperLinkRemove" href="https://www.facebook.com/alhsbklyn/" target="_blank">
-                    <i class="fa-brands fa-facebook"></i>
-                    <span>Facebook</span>
-                </a>
-                <p>Facebook de l'institut Abraham Lincoln High School</p>
-            </article>
-        </article>
+    <div id="contact" align="center">
+        <div class="container">
+            <form action="action_page.php">
+                <label for="fname">Nom</label>
+                <input type="text" id="fname" name="firstname">
+    
+                <label for="lname">Cognoms</label>
+                <input type="text" id="lname" name="lastname">
+    
+                <label for="country">Pais</label>
+                <select id="country" name="country">
+                    <option value="spain">Espanya</option>
+                    <option value="usa">Estats Units</option>
+                    <option value="uk">Regne Unit</option>
+                </select>
+    
+                <label for="subject">Missatge</label>
+                <textarea id="subject" name="subject" placeholder="Escriu el teu missatge.." style="height:200px"></textarea>
+    
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
     </div>
 
     <!-- Footer -->
@@ -79,9 +75,9 @@
             <p>ABRAHAM LINCOLN HS<br>2800 Ocean Pkwy Brooklyn, NY 11235</p>
         </div>
         <div id="footerR">
-                <i class="fa-solid fa-phone"></i> (718) 333-7400
-                <br>
-                <i class="fa-solid fa-fax"></i> (718) 946-5035
+            <i class="fa-solid fa-phone"></i> (718) 333-7400
+            <br>
+            <i class="fa-solid fa-fax"></i> (718) 946-5035
         </div>
     </footer>
     <!--  -->

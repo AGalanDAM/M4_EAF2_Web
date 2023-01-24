@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="./estils/styles.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./imatges/ALHS_icon.ico">
     <title>Abraham Lincoln High School - AGalan</title>
 </head>
 
@@ -27,6 +28,7 @@
                 <a href="./announcements.html">Anuncis</a>
                 <a href="./social.html">Social</a>
                 <a href="./story.html">Història</a>
+                <a href="./contact.html">Contacte</a>
             </div>
 
             <button class="openbtn" onclick="openNav()">&#9776;</button>
@@ -64,16 +66,16 @@
     </div>
     <!--  -->
 
-    <!-- Secció principal -->
-    <section style="margin-left: 8%;">
+    <!-- Seccions -->
+    <section class="section1" align="center">
         <div id="blocAnuncis">
-            <div id="blocAnuncisT" align="center">
-                <h1><a href="./announcements.html">ANUNCIS</a></h1>
+            <div id="blocTitle">
+                <a href="./announcements.html">ANUNCIS</a>
             </div>
-            <div id="blocAnuncisText">
+            <div id="blocContent">
                 <h2>Butlletí ALHS 19/01/2023</h2>
-                <p class="negreta">1) L'últim dia del primer trimestre és el 23 de gener</p>
-                <p>
+                <p class="bold">1) L'últim dia del primer trimestre és el 23 de gener</p>
+                <p style="font-size: 18px;">
                     L'últim dia del quart període de qualificació (període de qualificació final) és el 23 de gener. Els<br>
                     butlletins de qualificacions es distribuiran digitalment a NYCSA l'1 de febrer. Si no teniu un
                     NYSCA,<br>
@@ -82,11 +84,86 @@
             </div>
         </div>
         <div id="blocCalendari">
-            <div id="blocCalendariT" align="center">
-                <h1><a href="./calendar.html">CALENDARI</a></h1>
+            <div id="blocTitle">
+                <a href="./calendar.html">CALENDARI</a>
             </div>
-            <div id="blocCalendariText" align="center">
-                <img src="./imatges/calendari.png">
+            <div id="blocContent">
+                <img src="./imatges/calendari.png" style="width: 70%; margin-left: 15%; border-radius: 10px;">
+            </div>
+        </div>
+    </section>
+
+    <section class="section2" align="center">
+        <div id="blocSocial">
+            <div id="blocTitle">
+                <a href="./social.html">SOCIAL</a>
+            </div>
+            <div id="blocContent">
+                <article class="red" style="background-color: #f1de9d; border-radius: 5px;">
+                    <a class="hyperLinkRemove" href="https://www.instagram.com/alhsbklyn/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                </article>
+                <article class="red" style="background-color: #f1de9d; border-radius: 5px;">
+                    <a class="hyperLinkRemove" href="https://twitter.com/alhs_nyc" target="_blank">
+                        <i class="fa-brands fa-twitter"></i>
+                        <span>Twitter</span>
+                    </a>
+                </article>
+                <article class="red" style="background-color: #f1de9d; border-radius: 5px;">
+                    <a class="hyperLinkRemove" href="https://www.facebook.com/alhsbklyn/" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                        <span>Facebook</span>
+                    </a>
+                </article>
+            </div>
+        </div>
+        <div id="blocYoutube">
+            <div id="blocTitle">
+                <a>ABRAHAM LINCOLN HIGH SCHOOL: TOUR VIRTUAL</a>
+            </div>
+            <div id="blocContent">
+                <iframe width="550" height="280" style="margin-left: 9%; border: none; border-radius: 5px;" src="https://www.youtube.com/embed/Ou0UoKRkjd4?&mute=1"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section class="section3" align="center">
+        <div id="blocMaps">
+            <div id="blocTitle">
+                <a>MAPA</a>
+            </div>
+            <div id="blocContent">
+                <iframe width="550" height="340" style="margin-left: 10%; border: none; border-radius: 5px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3030.1310298595754!2d-73.9704123493984!3d40.582863079244724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24445010e1bfd%3A0x98d7bc7a80695518!2sK410%20Abraham%20Lincoln%20High%20School!5e0!3m2!1ses!2ses!4v1674574199186!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div id="blocContact">
+            <div id="blocTitle">
+                <a href="./contact.html">CONTACTE</a>
+            </div>
+            <div id="blocContent">
+                <div class="blocContactForm">
+                    <form action="action_page.php">
+                        <label for="fname">Nom</label>
+                        <input type="text" id="fname" name="firstname">
+            
+                        <label for="lname">Cognoms</label>
+                        <input type="text" id="lname" name="lastname">
+            
+                        <label for="country">Pais</label>
+                        <select id="country" name="country">
+                            <option value="spain">Espanya</option>
+                            <option value="usa">Estats Units</option>
+                            <option value="uk">Regne Unit</option>
+                        </select>
+            
+                        <label for="subject">Missatge</label>
+                        <textarea id="subject" name="subject" placeholder="Escriu el teu missatge.." style="height:50px"></textarea>
+            
+                        <input type="submit" value="Enviar">
+                    </form>
+                </div>
             </div>
         </div>
     </section>
